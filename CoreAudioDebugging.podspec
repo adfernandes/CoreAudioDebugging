@@ -1,9 +1,7 @@
-version = "0.0.1"
-
 Pod::Spec.new do |s|
 
   s.name         = "CoreAudioDebugging"
-  s.version      = version
+  s.version      = "0.0.1"
   s.summary      = "Pretty-print AudioStreamBasicDefinition and AudioComponentDescription structures."
 
   s.description  = <<-DESC
@@ -19,7 +17,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Andrew Fernandes" => "andrew@fernandes.org" }
 
-  s.source       = { :git => "https://github.com/adfernandes/CoreAudioDebugging.git", :tag => version }
+  s.source       = { :git => "https://github.com/adfernandes/CoreAudioDebugging.git", :tag => s.version.to_s }
 
   s.source_files  = '*.{h,mm,cpp}'
   s.public_header_files = '*.h'
