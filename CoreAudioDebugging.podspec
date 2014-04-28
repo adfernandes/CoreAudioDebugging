@@ -23,6 +23,8 @@ Pod::Spec.new do |s|
   s.public_header_files = '*.h'
 
   s.ios.deployment_target = "6.0"
+  s.ios.libraries   = 'stdc++'
+  
   s.osx.deployment_target = "10.8"
 
 end
