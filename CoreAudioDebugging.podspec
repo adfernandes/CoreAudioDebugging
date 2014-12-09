@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CoreAudioDebugging"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Pretty-print AudioStreamBasicDefinition and AudioComponentDescription structures."
 
   s.description  = <<-DESC
@@ -22,7 +22,10 @@ Pod::Spec.new do |s|
   s.source_files  = '*.{h,mm,cpp}'
   s.public_header_files = '*.h'
 
-  s.ios.deployment_target = "6.0"
-  s.osx.deployment_target = "10.8"
+  s.ios.deployment_target = "7.0"
+  s.ios.libraries = "c++"
+
+  s.osx.deployment_target = "10.9"
+  s.osx.libraries = "c++"
 
 end
